@@ -1,0 +1,273 @@
+.button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    overflow: hidden;
+    background: #66ff66;
+    color: ghostwhite;
+    border-radius: 100px;
+
+}
+
+.button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.button:hover span {
+    color: black;
+}
+
+.button::before,
+.button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.button::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.h1 {
+    text-align: center;
+    padding-top: 15vh;
+}
+
+.divButton {
+    top: 10%;
+    padding-left: 40%;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    left: 38%;
+    margin: 10px;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+.buttonNo {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    overflow: hidden;
+    background: red;
+    color: ghostwhite;
+    border-radius: 100px;
+
+}
+
+.buttonNo span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.buttonNo:hover span {
+    color: black;
+}
+
+.buttonNo::before,
+.buttonNo::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.buttonNo::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.buttonNo:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.back-button:hover {
+    background-color: #e6e6e6;
+}
+
+.back-button:active {
+    background-color: #d9d9d9;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background-video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+
+    padding: 20px;
+}
+
+.buttonBack {
+    align-items: center;
+    background-color: transparent;
+    color: blue;
+    cursor: pointer;
+    display: flex;
+    font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    padding: 1rem;
+    padding-left: 47%;
+}
+
+.buttonBack:before {
+    background-color: lightskyblue;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-right: 10px;
+    transition: all .42s cubic-bezier(.25, .8, .25, 1);
+    width: 0;
+}
+
+.buttonBack:hover:before {
+    background-color: lightskyblue;
+    width: 3rem;
+}
+
+.h2 {
+    text-align: center;
+    color: gold;
+}
+
+.h2Button {
+    padding-top: 40vh;
+}
+
+.h3 {
+    text-align: center;
+    color: red;
+}
+
+.h3Button {
+    padding-top: 40vh;
+}

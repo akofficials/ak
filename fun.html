@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fun.css">
+</head>
+
+<body>
+    <div class="background-video">
+        <video autoplay loop muted>
+            <source
+                src="https://res.cloudinary.com/dmjgj2enf/video/upload/v1685970027/yt1s.com_-_Love_Shape_Animation_Video_Abstract_Heart_Background_HD_YouTube_v720P_mjukmz.mp4"
+                type="video/mp4">
+
+        </video>
+        <div class="content">
+
+            <div id="section1">
+                <h1 class="h1">Shall we go on a date?</h1>
+                <div class="divButton">
+                    <button class="button" onclick="display('section3')"> <span>Yes ah</button></Button></span>
+                    </button>
+                    <button class="button" onclick="display('section3')"> <span>Yes ah</button></Button></span>
+                    </button>
+                </div>
+                <button class="cta" onclick="display('section2')">
+                    <span>Looking for any other option?</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </button>
+            </div>
+            <div id="section2">
+                <h1 class="h1">Shall we go on a date?</h1>
+                <div class="divButton">
+                    <button class="button" onclick="display('section3')"> <span>Yes ah</button></Button></span>
+                    </button>
+                    <button class="buttonNo" onclick="display('section4')"> <span>No ah</button></Button></span>
+                    </button>
+                </div>
+                <button class="buttonBack" onclick="display('section1')">Back</button>
+            </div>
+            <div id="section3">
+                <div class="h2Button">
+                    <h2 class="h2">Luv u 3000</h2>
+                    <button class="buttonBack" onclick="display('section1')">Back</button>
+                </div>
+            </div>
+            <div id="section4">
+                <div class="h3Button">
+                    <h3 class="h3">Apdila solla kudathu</h3>
+                    <button class="buttonBack" onclick="display('section2')">Back</button>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript"
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+        <script src="fun.js"></script>
+</body>
+
+</html>
